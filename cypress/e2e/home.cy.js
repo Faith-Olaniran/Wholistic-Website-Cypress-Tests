@@ -12,7 +12,7 @@ describe('Home Page', () => {
     cy.contains(/Bringing your best work together as a whole/i).should('be.visible');
   });
 
-  it('should scroll to the "How it Works" section when clicked', () => {
+  it('should navigate to the "How it Works" section when clicked', () => {
     cy.get('nav').first().within(() => {
       cy.contains('How it works')
         .should('exist') 
@@ -23,7 +23,7 @@ describe('Home Page', () => {
     cy.get('#how-it-works').should('be.visible'); 
   });
 
-  it('should scroll to the "Features" section when clicked', () => {
+  it('should navigate to the "Features" section when clicked', () => {
     cy.get('nav').first().within(() => {
       cy.contains('Features')
         .should('exist') 

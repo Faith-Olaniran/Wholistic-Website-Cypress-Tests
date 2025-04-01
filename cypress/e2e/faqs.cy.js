@@ -29,7 +29,7 @@ describe('FAQs Section', () => {
       });
   });
 
-  it.only('should reveal and hide answers for all FAQs when clicked', () => {
+  it('should reveal and hide answers for all FAQs when clicked', () => {
     cy.visit('/faqs'); 
 
     cy.get('.faq_heading-2').each(($faq) => {
