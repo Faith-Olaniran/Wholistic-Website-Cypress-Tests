@@ -29,16 +29,6 @@ describe('FAQs Section', () => {
       });
   });
 
-  it('should reveal and hide answers when clicking an FAQ question', () => {
-    cy.visit('/faqs');
-
-    cy.get('.faq_heading-2').first().as('firstFAQ'); 
-
-    cy.get('@firstFAQ').click();
-
-
-  });
-
   it.only('should reveal and hide answers for all FAQs when clicked', () => {
     cy.visit('/faqs'); 
 
