@@ -1,0 +1,6 @@
+# Ignore Allure output
+allure-report/
+allure-results/
+
+# Node modules (if not already ignored)
+node_modules/
